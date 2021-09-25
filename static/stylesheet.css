@@ -1,0 +1,54 @@
+body {
+background-image: url("bcimg.jpg");
+background-size: cover;
+margin:0;
+padding:0;
+height:100%;
+}
+body img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menue_items{
+    margin-bottom: 0%;
+    width: fit-content;
+    padding: 0px 0px 0px 0px;
+    margin-left:150px;
+    position:absolute;
+    bottom:0;
+    opacity: 1.0;
+    align-content:space-between 0px;
+    display: flex;
+}
+.card.one
+{
+    background-image:url("item1.jpg");  
+    background-size: cover;
+}
+.card.two{
+    background-image:url("item2.jpg");
+    background-size: cover;
+}
+.card.three
+{
+    background-size: cover;
+    background-image:url("item3.jpg");
+}
+.card
+{   
+    float: left;
+    background-size: cover;
+    padding: 0px;
+    background-color:  bisque;
+    width: 200px;
+    height: 300px;
+    transition-duration: 1000ms;
+    transition-property: background,transform;
+    transition-timing-function: ease-in;
+    transform: scale(.2);
+}
+.card:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
