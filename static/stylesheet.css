@@ -18,7 +18,6 @@ body img{
     position:absolute;
     bottom:0;
     opacity: 1.0;
-    align-content:space-between 0px;
     display: flex;
 }
 .card.one
@@ -35,6 +34,11 @@ body img{
     background-size: cover;
     background-image:url("item3.jpg");
 }
+.card.four
+{
+    background-size: cover;
+    background-image:url("item4.jpg");
+}
 .card
 {   
     float: left;
@@ -46,7 +50,7 @@ body img{
     transition-duration: 1000ms;
     transition-property: background,transform;
     transition-timing-function: ease-in;
-    transform: scale(.2);
+    transform: scale(.5);
 }
 .card:hover{
     background-color: blue;
