@@ -2,24 +2,60 @@ body {
 background-image: url("bcimg.jpg");
 background-size: cover;
 margin:0;
-padding:0;
-height:100%;
+padding: 0px;;
+height:50%;
 }
 body img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+html, body {
+    height:80%;
+}
+.animatedtext h2
+{ 
+    font-weight: bolder;
+    font-size: 48pt;
+}
+.animatedtext p{
+    color: rgb(255, 255, 255);
+}
+.animatedtext
+{
+    position: relative;
+    font-family: Papyrus;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 .menue_items{
+    background-color: rgb(255, 0, 0,.5);
+    color: white;
     margin-bottom: 0%;
-    width: fit-content;
+    width: max-content;
     padding: 0px 0px 0px 0px;
     margin-left:150px;
     position:absolute;
-    bottom:0;
-    opacity: 1.0;
+    top: 70%;
     display: flex;
-}
+  }
 .card.one
 {
     background-image:url("item1.jpg");  
@@ -39,8 +75,14 @@ body img{
     background-size: cover;
     background-image:url("item4.jpg");
 }
+.card.five
+{
+    background-size: cover;
+    background-image:url("item5.jpg");
+}
 .card
-{   
+{ 
+    position: relative;
     float: left;
     background-size: cover;
     padding: 0px;
@@ -52,7 +94,13 @@ body img{
     transition-timing-function: ease-in;
     transform: scale(.5);
 }
-.card:hover{
-    background-color: blue;
+.txt
+{
+    background-color:rgb(0, 0, 0,0.7);
+}
+.card:hover {
     transform: scale(1.1);
+}
+ .txt a{
+    color:cyan;
 }
